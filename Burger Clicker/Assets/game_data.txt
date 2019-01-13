@@ -1,0 +1,23 @@
+Upgrades
+  - Veggies
+   - Lettuce (bps/lvl =+ 1; bpc =+ 1)
+   - Tomato
+   - Onions
+   - Arugula
+   - Cucumber
+   - Mushrooms
+   - Pickles
+  - Meat
+    - Pepperoni
+    - Bacon
+    - Patty
+  - Cheeses
+    - Cheddar
+    - American
+    - Mozzarella
+    - Monterey Jack
+  - Sauces
+    - Tomato
+    - Olive Oil
+    - Pesto
+    - Cream
