@@ -1,8 +1,8 @@
 Upgrades
   - Veggies
-   - Lettuce (bps/lvl =+ 1; bpc =+ 1)
-   - Tomato
-   - Onions
+   - Lettuce (1/1)
+   - Tomato (15/15)
+   - Onions (50/50)
    - Arugula
    - Cucumber
    - Mushrooms
