@@ -22,6 +22,8 @@ public var lettuce_cost: float = 15.0f;
 
 public var tomato_level = 0;
 public var tomato_bps: float = 0;
+public var tomato_bpc: float = 0;
+public var tomato_cost: float = 120.0f;
 
 // Cheeses
 public var cheese_american = 0;
@@ -54,11 +56,15 @@ function Update ()
 	lettuce_bps = lettuce_level*1;
 	lettuce_bpc = lettuce_level*1;
 
-	bps = lettuce_bps;
-	bpc = lettuce_bpc+1;
+	tomato_bps = tomato_level*15;
+	tomato_bpc = tomato_level*15;
+
+	bps = lettuce_bps+tomato_bps;
+	bpc = lettuce_bpc+tomato_bpc+1;
 
 	// Set Costs
-	lettuce_cost = 15+lettuce_level*1.5;
+	lettuce_cost = 15+lettuce_level*5+(lettuce_level*lettuce_level);
+	tomato_cost = 120+tomato_level*5+(tomato_level*tomato_level);
 }
 
 function FixedUpdate ()

@@ -1,3 +1,0 @@
-22nov2018
-
-- if (Input.GetMouseButton(0)==true && 200 < mx && mx < 500 && 300 < my && my < 600){transform_burger.sizeDelta = new Vector2(350.0f, 350.0f); OnClick();}

@@ -601,7 +601,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1741236052}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99862283
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -814,6 +814,8 @@ MonoBehaviour:
   lettuce_cost: 10
   tomato_level: 0
   tomato_bps: 0
+  tomato_bpc: 0
+  tomato_cost: 120
   cheese_american: 0
   cheese_american_bps: 0
   cheese_mozzarella: -1
@@ -885,7 +887,7 @@ GameObject:
   - component: {fileID: 537572791}
   - component: {fileID: 537572790}
   m_Layer: 5
-  m_Name: BPSLettuce
+  m_Name: BPSTomato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -999,13 +1001,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 546849483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 012aff199dfbf4cefb1149264412d361, type: 3}
+  m_Script: {fileID: 11500000, guid: e74cec5dca30845ef820dfa634065c15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtomLettuce: {fileID: 546849486}
-  LevelTextLettuce: {fileID: 2114053592}
-  BPSTextLettuce: {fileID: 537572790}
-  CostTextLettuce: {fileID: 1528290368}
+  ButtomTomato: {fileID: 546849486}
+  LevelTextTomato: {fileID: 2114053592}
+  BPSTextTomato: {fileID: 537572790}
+  CostTextTomato: {fileID: 1528290368}
   GameHandler: {fileID: 519420030}
 --- !u!114 &546849486
 MonoBehaviour:
@@ -1709,7 +1711,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000025843732}
+  m_AnchoredPosition: {x: 0, y: 0.000038450304}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1080711419
@@ -2738,7 +2740,7 @@ GameObject:
   - component: {fileID: 1528290369}
   - component: {fileID: 1528290368}
   m_Layer: 5
-  m_Name: CostLettuce
+  m_Name: CostTomato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3950,7 +3952,7 @@ GameObject:
   - component: {fileID: 2114053593}
   - component: {fileID: 2114053592}
   m_Layer: 5
-  m_Name: LevelLettuce
+  m_Name: LevelTomato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
