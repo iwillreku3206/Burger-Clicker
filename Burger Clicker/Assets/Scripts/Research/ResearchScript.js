@@ -4,21 +4,47 @@
 
 var rNames: String[] = [
 	"",
-	"Upgraded Burger Machine I",
-	"Upgraded Burger Machine II",
-	"Upgraded Burger Machine III",
-	"Upgraded Burger Machine IV",
-	"Upgraded Burger Machine V",
-	"Upgraded Burger Machine VI",
-	"Upgraded Burger Machine VII",
-	"Upgraded Burger Machine VIII",
-	"Upgraded Burger Machine IX",
-	"Upgraded Burger Machine X"
+	"Burger Machine I",
+	"Burger Machine II",
+	"Burger Machine III",
+	"Burger Machine IV",
+	"Burger Machine V",
+	"Burger Machine VI",
+	"Burger Machine VII",
+	"Burger Machine VIII",
+	"Burger Machine IX",
+	"Burger Machine X"
+];
+var rDescs: String[] = [
+	"",
+	"+50% BPS and BPC",
+	"+100% BPS and BPC",
+	"+150% BPS and BPC",
+	"+200% BPS and BPC",
+	"+250% BPS and BPC",
+	"+300% BPS and BPC",
+	"+350% BPS and BPC",
+	"+400% BPS and BPC",
+	"+450% BPS and BPC",
+	"+500% BPS and BPC"
+];
+
+var rCPSUpPercent: float[] = [
+	null,
+	.5f,
+	1.0f,
+	1.5f,
+	2.0f,
+	2.5f,
+	3.0f,
+	3.5f,
+	4.0f,
+	4.5f,
+	5.0f
 ];
 
 function Start ()
 {
-
 }
 
 function Update ()
