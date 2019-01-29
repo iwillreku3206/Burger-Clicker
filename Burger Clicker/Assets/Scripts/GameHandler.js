@@ -25,12 +25,14 @@ public var tomato_bps: float = 0;
 public var tomato_bpc: float = 0;
 public var tomato_cost: float = 120.0f;
 
-// Cheeses
 public var cheese_american = 0;
 public var cheese_american_bps: float = 0;
 
 public var cheese_mozzarella = -1;
 public var cheese_mozzarella_bps: float = 0;
+
+// Researches
+var rBMUpPercent: float = 0.0f;
 
 // On-screen GameObjects
 var burger_counter: Text;
@@ -59,8 +61,8 @@ function Update ()
 	tomato_bps = tomato_level*15;
 	tomato_bpc = tomato_level*15;
 
-	bps = lettuce_bps+tomato_bps;
-	bpc = lettuce_bpc+tomato_bpc+1;
+	bps = (lettuce_bps+tomato_bps)*(rBMUpPercent+1.0f);
+	bpc = (lettuce_bpc+tomato_bpc+1)*(rBMUpPercent+1.0f);
 
 	// Set Costs
 	lettuce_cost = 15+lettuce_level*5+(lettuce_level*lettuce_level);

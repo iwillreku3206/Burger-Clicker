@@ -2,6 +2,17 @@
 
 #pragma strict
 
+var rBM1: boolean = false;
+var rBM2: boolean = false;
+var rBM3: boolean = false;
+var rBM4: boolean = false;
+var rBM5: boolean = false;
+var rBM6: boolean = false;
+var rBM7: boolean = false;
+var rBM8: boolean = false;
+var rBM9: boolean = false;
+var rBM10: boolean = false;
+
 var rNames: String[] = [
 	"",
 	"Burger Machine I",
@@ -45,6 +56,7 @@ var rCPSUpPercent: float[] = [
 
 function Start ()
 {
+
 }
 
 function Update ()
