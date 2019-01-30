@@ -77,5 +77,5 @@ function FixedUpdate ()
 function Prestige ()
 {
 	if (burgers < 1000000000000){print("cannot prestige");}
-	if (burgers > 1000000000000)
+	if (burgers > 1000000000000){}
 }
