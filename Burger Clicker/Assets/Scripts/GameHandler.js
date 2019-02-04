@@ -8,12 +8,10 @@ public var burgers: float = 0;
 public var bps: float = 0;
 public var bpc: float = 1;
 
-// Default Burger Levels
-public var patty_level = 1;
-public var patty_bps: float=1;
+public var prestiges: int;
+public var prestiges_multiplier: int;
 
-public var bun_level = 0;
-public var bun_bps: float = 0;
+// Default Burger Levels
 
 public var lettuce_level = 0;
 public var lettuce_bps: float = 0;
@@ -24,12 +22,6 @@ public var tomato_level = 0;
 public var tomato_bps: float = 0;
 public var tomato_bpc: float = 0;
 public var tomato_cost: float = 120.0f;
-
-public var cheese_american = 0;
-public var cheese_american_bps: float = 0;
-
-public var cheese_mozzarella = -1;
-public var cheese_mozzarella_bps: float = 0;
 
 // Researches
 var rBMUpPercent: float = 0.0f;
@@ -47,7 +39,9 @@ function Start ()
 }
 
 function Update ()
-{
+{	
+	prestiges_multiplier = prestiges+1;
+	
 	// Counters
 	burgers = burgers+bps/(1/Time.deltaTime);
 	burger_counter.text = "Burgers: "+burgers.ToString("F0");
@@ -61,8 +55,8 @@ function Update ()
 	tomato_bps = tomato_level*15;
 	tomato_bpc = tomato_level*15;
 
-	bps = (lettuce_bps+tomato_bps)*(rBMUpPercent+1.0f);
-	bpc = (lettuce_bpc+tomato_bpc+1)*(rBMUpPercent+1.0f);
+	bps = (lettuce_bps+tomato_bps)*(rBMUpPercent+1.0f)*prestiges_multiplier;
+	bpc = (lettuce_bpc+tomato_bpc+1)*(rBMUpPercent+1.0f)*prestiges_multiplier;
 
 	// Set Costs
 	lettuce_cost = 15+lettuce_level*5+(lettuce_level*lettuce_level);
@@ -77,5 +71,13 @@ function FixedUpdate ()
 function Prestige ()
 {
 	if (burgers < 1000000000000){print("cannot prestige");}
-	if (burgers > 1000000000000){}
+	if (burgers > 1000000000000)
+	{
+		tomato_level = 0;
+		lettuce_level = 0;
+		
+		burgers = 0;
+		
+		prestiges++;
+	}
 }
