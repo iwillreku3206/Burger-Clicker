@@ -4,7 +4,7 @@
 
 import UnityEngine.UI;
 
-public var burgers: float = 0;
+public var burgers: long = 0;
 public var bps: float = 0;
 public var bpc: float = 1;
 
@@ -39,9 +39,9 @@ function Start ()
 }
 
 function Update ()
-{	
+{
 	prestiges_multiplier = prestiges+1;
-	
+
 	// Counters
 	burgers = burgers+bps/(1/Time.deltaTime);
 	burger_counter.text = "Burgers: "+burgers.ToString("F0");
@@ -70,14 +70,14 @@ function FixedUpdate ()
 
 function Prestige ()
 {
-	if (burgers < 1000000000000){print("cannot prestige");}
-	if (burgers > 1000000000000)
+	if (burgers < 1000000){print("cannot prestige");}
+	if (burgers > 1000000)
 	{
 		tomato_level = 0;
 		lettuce_level = 0;
-		
+
 		burgers = 0;
-		
+
 		prestiges++;
 	}
 }
